@@ -173,7 +173,7 @@ class Particle{
   this.y = valY;
   this.img = img;
   this.xSize = 0;
-  this.vSize = random(0.2,1);
+  this.vSize = random(0.2,4);
   this.vx=random(-1,1);
   this.vy=random(-5,-0.5);
   this.alpha=random(0,255);
@@ -196,7 +196,7 @@ finished2(){
  show(){
   //imageMode(CENTER);
   tint(255,this.alpha);
-  image(this.img,width-this.x,this.y,this.xSize,this.xSize);
+  image(this.img,this.x,this.y,this.xSize,this.xSize);
         
   //noStroke();
   //fill(235,random(149,210),52,this.alpha);
