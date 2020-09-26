@@ -150,14 +150,14 @@ function draw() {
        fill(255,0,0,0);
        if(counter==1){
          print(particles.length);
-         if(particles.length<=40){
+         if(particles.length<=30){
         let p = new Particle((width-x*vScale),(y*vScale),img);
         particles.push(p);
          }
        }
      }
      
-     rect(width-x*vScale,y*vScale,width/vScale,height/vScale);
+     //rect(width-x*vScale,y*vScale,width/vScale,height/vScale);
      
      
    }  
