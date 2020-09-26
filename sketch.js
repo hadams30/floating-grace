@@ -147,7 +147,7 @@ function draw() {
      }
      
      else if(bright>=200){
-       fill(255,0,0,0);
+       fill(0,0);
        if(counter==1){
          print(particles.length);
          if(particles.length<=30){
