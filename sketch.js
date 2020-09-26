@@ -131,7 +131,7 @@ function draw() {
   
   video.loadPixels();
   loadPixels();
-  for(var y=0; y<video.height; y++){
+  for(var y=video.height; y>0; y--){
    for(var x=0; x<video.width; x++){ 
     var index = (video.width-x+1+(y*video.width))*4;
      var r= video.pixels[index+0];
@@ -149,13 +149,11 @@ function draw() {
      else if(bright>=200){
        fill(0,0);
        if(counter==1){
-         if(y>height/4&&y<height-height/4){
          print(particles.length);
          if(particles.length<=30){
         let p = new Particle((width-x*vScale),(y*vScale),img);
         particles.push(p);
          }
-       }
        }
      }
      
