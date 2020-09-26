@@ -27,8 +27,8 @@ function preload(){
 }
 
 function setup() {
-  disW = windowWidth;
-  disY = windowHeight;
+  disW = windowWidth-20;
+  disY = windowHeight-20;
   createCanvas(disW,disY);
   //BLOOM: initialize the createGraphics layers
   
@@ -50,7 +50,7 @@ function setup() {
   }
   pixelDensity(1);
   video=createCapture(constraints);
-  video.size(width/vScale,height/vScale);
+  video.size((width)/vScale,(height)/vScale);
   video.hide();
   setInterval(timeIt,10);
 }
@@ -147,7 +147,7 @@ function draw() {
      }
      
      else if(bright>=200){
-       fill(255,0,0,150);
+       fill(255,0,0,255);
        if(counter==1){
          print(particles.length);
          if(particles.length<=30){
@@ -157,7 +157,7 @@ function draw() {
        }
      }
      
-     rect(x*vScale,y*vScale,width/vScale,height/vScale);
+     rect(width-x*vScale,y*vScale,width/vScale,height/vScale);
      
      
    }  
