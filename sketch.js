@@ -147,7 +147,7 @@ function draw() {
      }
      
      else if(bright>=200){
-       fill(255,0);
+       fill(255,0,0,150);
        if(counter==1){
          print(particles.length);
          if(particles.length<=30){
@@ -157,7 +157,7 @@ function draw() {
        }
      }
      
-     //rect(x*vScale,y*vScale,width/vScale,height/vScale);
+     rect(x*vScale,y*vScale,width/vScale,height/vScale);
      
      
    }  
