@@ -150,7 +150,7 @@ function draw() {
        fill(0,0);
        if(counter==1){
          print(particles.length);
-         if(particles.length<=30){
+         if(particles.length<=50){
         let p = new Particle((width-x*vScale),(y*vScale),img);
         particles.push(p);
          }
