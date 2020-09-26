@@ -146,7 +146,7 @@ function draw() {
   //rect(width-x*vScale,y*vScale,width/vScale,height/vScale);
      }
      
-     else if(bright>=180){
+     else if(bright>=200){
        fill(255,0);
        if(counter==1){
          print(particles.length);
@@ -175,7 +175,7 @@ class Particle{
   this.xSize = 0;
   this.vSize = random(0.2,1);
   this.vx=random(-1,1);
-  this.vy=random(-3,-0.5);
+  this.vy=random(-5,-0.5);
   this.alpha=random(0,255);
  }
   
@@ -190,7 +190,7 @@ finished2(){
    this.x+=this.vx;
    this.y+=this.vy;
    this.xSize+=this.vSize;
-   this.alpha-=1;
+   this.alpha-=5;
  }
   
  show(){
