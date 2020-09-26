@@ -121,7 +121,7 @@ function draw() {
   for (let i=particles.length-1;i>=0;i--){
     particles[i].update();
     particles[i].show(); 
-    if(particles[i].finished1()){
+    if(particles[i].finished2()){
       particles.splice(i,1); 
     }
     //else if(particles[i].finished2()){
@@ -142,7 +142,7 @@ function draw() {
      
      noStroke();
      if(bright<200){
-       fill(r,g,b,40);
+       fill(0,0);
   //rect(width-x*vScale,y*vScale,width/vScale,height/vScale);
      }
      
