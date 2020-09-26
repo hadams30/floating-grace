@@ -88,13 +88,13 @@ function timeIt(){
 
 function draw() {
   
-  //image(video,0,0,width,height);
+  image(video,0,0,width,height);
   //fill(25, 13, 31, 50);
  // rectMode(
   //rect(0,0,width,height);
   
   //BLOOM
-  
+  /*
   pass1.shader(blurH);
   blurH.setUniform('tex0', video);
   blurH.setUniform('texelSize', [1.0/width, 1.0/height]);
@@ -113,7 +113,7 @@ function draw() {
   noTint();
   translate(width,0);
   scale(-1,1);
-  image(bloomPass, 0,0, width, height);
+  //image(bloomPass, 0,0, width, height);*/
   
   
   //print(counter);
