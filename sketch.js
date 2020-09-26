@@ -147,10 +147,10 @@ function draw() {
      }
      
      else if(bright>=200){
-       fill(255,0,0,255);
+       fill(255,0,0,0);
        if(counter==1){
          print(particles.length);
-         if(particles.length<=30){
+         if(particles.length<=40){
         let p = new Particle((width-x*vScale),(y*vScale),img);
         particles.push(p);
          }
@@ -173,7 +173,7 @@ class Particle{
   this.y = valY;
   this.img = img;
   this.xSize = 0;
-  this.vSize = random(0.2,4);
+  this.vSize = random(1,4);
   this.vx=random(-1,1);
   this.vy=random(-5,-0.5);
   this.alpha=random(0,255);
