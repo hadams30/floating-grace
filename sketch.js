@@ -149,11 +149,13 @@ function draw() {
      else if(bright>=200){
        fill(0,0);
        if(counter==1){
+         if(y>height/4&&y<height-height/4){
          print(particles.length);
-         if(particles.length<=50){
+         if(particles.length<=30){
         let p = new Particle((width-x*vScale),(y*vScale),img);
         particles.push(p);
          }
+       }
        }
      }
      
