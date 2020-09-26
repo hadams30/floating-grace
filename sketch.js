@@ -49,7 +49,7 @@ function setup() {
     } 
   }
   pixelDensity(1);
-  video=createCapture(VIDEO);
+  video=createCapture(constraints);
   video.size(width/vScale,height/vScale);
   video.hide();
   setInterval(timeIt,10);
