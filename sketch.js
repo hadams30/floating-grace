@@ -131,7 +131,7 @@ function draw() {
   
   video.loadPixels();
   loadPixels();
-  for(var y=video.height; y>0; y--){
+  for(var y=video.height/4; y<video.height*0.75; y++){
    for(var x=0; x<video.width; x++){ 
     var index = (video.width-x+1+(y*video.width))*4;
      var r= video.pixels[index+0];
